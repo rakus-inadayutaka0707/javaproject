@@ -3,15 +3,7 @@ package com.example.domain;
 public class Car {
 	private String partsName;
 	private Integer maxSpeed;
-	private Integer modelYear;
-
-	public Integer getModelYear() {
-		return modelYear;
-	}
-
-	public void setModelYear(Integer modelYear) {
-		this.modelYear = modelYear;
-	}
+	private String color;
 
 	public String getpartsName() {
 		return partsName;
@@ -29,8 +21,17 @@ public class Car {
 		this.maxSpeed = maxSpeed;
 	}
 
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
 	@Override
 	public String toString() {
-		return "Car [partsName=" + partsName + ", maxSpeed=" + maxSpeed + ", modelYear=" + modelYear + "]";
+		return "Car [partsName=" + partsName + ", maxSpeed=" + maxSpeed + ", color=" + color + "]";
 	}
+
 }
