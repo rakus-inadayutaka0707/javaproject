@@ -1,27 +1,36 @@
 package com.example.domain;
 
 public class Car {
-	private String name;
-	private Integer speed;
+	private String partsName;
+	private Integer maxSpeed;
+	private Integer modelYear;
 
-	public String getName() {
-		return name;
+	public Integer getModelYear() {
+		return modelYear;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setModelYear(Integer modelYear) {
+		this.modelYear = modelYear;
 	}
 
-	public Integer getSpeed() {
-		return speed;
+	public String getpartsName() {
+		return partsName;
 	}
 
-	public void setSpeed(Integer speed) {
-		this.speed = speed;
+	public void setName(String partsName) {
+		this.partsName = partsName;
+	}
+
+	public Integer getmaxSpeed() {
+		return maxSpeed;
+	}
+
+	public void setpartsSpeed(Integer maxSpeed) {
+		this.maxSpeed = maxSpeed;
 	}
 
 	@Override
 	public String toString() {
-		return "Car [name=" + name + ", speed=" + speed + "]";
+		return "Car [partsName=" + partsName + ", maxSpeed=" + maxSpeed + ", modelYear=" + modelYear + "]";
 	}
 }
